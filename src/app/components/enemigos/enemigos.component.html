@@ -1,0 +1,18 @@
+
+
+<div class="container col-9 d-flex flex-wrap">
+
+  <div class="card my-3 mx-2" style="width: 18rem;" *ngFor="let enemigo of enemigos; let i = index">
+    <img [src]="enemigo.img" [alt]="enemigo.titulo" class="card-img-top" alt="heroe">
+    <div class="card-body">
+      <h5 class="card-title">{{ enemigo.titulo }}</h5>
+      <p class="card-text">{{ enemigo.descripcion }}</p>
+      <span class="badge bg-danger">{{ enemigo.year }}</span><br>
+
+      <div class="d-grid gap-2 mt-3">
+        <button (click)="verEnemigo(i)" class="btn btn-primary ">Ver más</button>
+      </div>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,29 @@
+<h1>Buscando: <small>{{ termino }}</small></h1> 
+<hr>
+
+<div *ngIf="enemigos.length === 0">
+  <h2>No existen resultados con el término: {{ termino }}</h2>
+</div>
+
+<div class="card" *ngFor="let enemigo of enemigos">
+  <img [src]="enemigo.img" [alt]="enemigo.titulo">
+
+  <div class="container">
+
+    <h4 class="titulo">
+      <b>{{ enemigo.titulo }}</b>
+    </h4>
+
+    <p class="texto"> {{ enemigo.descripcion }} </p>
+    <p>
+      <small class="text-sec"> {{ enemigo.year }} </small>
+    </p>
+
+    <div class="btn1">
+      <button (click)="verEnemigo(enemigo.idx)" type="button" class="btn">
+        Ver más...
+      </button>
+    </div>
+    
+  </div>    
+</div>

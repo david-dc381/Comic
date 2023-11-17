@@ -1,0 +1,38 @@
+
+.card {
+  width: 30%;
+  border: 4px solid rgb(65, 133, 61);
+  padding: 20px;
+}
+
+.card img{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container .titulo{
+  text-align: center;
+  font-size: 25px;
+  margin: 5px;
+}
+
+.container .text-sec {
+  color: gray;
+}
+
+/*Estilos del boton*/
+.btn{
+  color: white;
+  background-color:  rgb(65, 133, 61);
+  border: none;
+  text-align: center;
+  padding: 15px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 100px;
+}
+
+.btn:hover {
+  background-color: rgb(28, 57, 26);
+  color: white;
+}

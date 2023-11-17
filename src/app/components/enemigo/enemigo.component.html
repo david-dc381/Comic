@@ -1,0 +1,18 @@
+
+<div class="card my-3 mx-2" style="width: 18rem;">
+  <img [src]="enemigo.img" [alt]="enemigo.titulo" class="card-img-top" alt="heroe">
+  <div class="card-body">
+    <h5 class="card-title">{{ enemigo.titulo }}</h5>
+    <p class="card-text">{{ enemigo.descripcion }}</p>
+    <span class="badge bg-danger">{{ enemigo.year }}</span><br>
+    
+    <div class="d-grid gap-2 mt-3">
+      <button  [routerLink]="'/enemigos'" class="btn btn-primary ">Volver</button>
+    </div>
+  </div>
+</div>
+<div>
+  <img *ngIf="enemigo.casa === 'DC'" class="img-logo" src="assets/img/dc-logo.jpg" alt="dc-logo">
+  <img *ngIf="enemigo.casa === 'MARVEL'" class="img-logo" src="assets/img/marvel-logo.png" alt="marvel-logo">
+  <img *ngIf="enemigo.casa === 'IMAGE'" class="img-logo" src="assets/img/image-logo.png" alt="image-logo">
+</div>
